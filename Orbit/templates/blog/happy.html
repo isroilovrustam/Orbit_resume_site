@@ -1,0 +1,29 @@
+{% load static %}
+
+
+<div class="site-section bg-light" id="testimonials-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="0">
+                <div class="section-heading text-center">
+                    <h2>Happy Clients</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for happy in happys %}
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="block-47 d-flex mb-5">
+                    <div class="block-47-image">
+                        <img src="{{ happy.image.url }}" alt="Image placeholder" class="img-fluid">
+                    </div>
+                    <blockquote class="block-47-quote">
+                        <p>{{ happy.content }}</p>
+                        <cite class="block-47-quote-author">{{ happy.name }}</cite>
+                    </blockquote>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

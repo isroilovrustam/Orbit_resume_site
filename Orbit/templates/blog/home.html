@@ -1,0 +1,13 @@
+{% load static %}
+{% for home in homes %}
+<div class="site-blocks-cover overlay" style="background-image: url({{ home.image.url }});" data-aos="fade"
+     data-stellar-background-ratio="0.5" id="home-section">
+    <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-lg-8">
+                <h1 class="text-white" data-aos="fade-up" data-aos-delay="0">{{ home.content}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

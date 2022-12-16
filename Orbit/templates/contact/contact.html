@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="untree_co-section" id="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5" data-aos="fade-up" data-aos-delay="0">
+                <div class="section-heading text-center">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <form method="post" class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row">
+                        {% csrf_token %}
+                        <div class="col-6">
+                            <div class="form-group">
+                                {{ form.first_name }}
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                {{ form.last_name }}
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="form-group">
+                        {{ form.email }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.message }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="h5 mb-4">Contact Info</h3>
+                {% for contactme in contactmes %}
+                <address class="text-black d-flex"><span class="mt-1 icon-room mr-2"></span><span>{{ contactme.address }}</span>
+                </address>
+                <ul class="list-unstyled ul-links mb-4">
+                    <li class="mb-3"><a href="tel://11234567890" class="d-flex"><span
+                            class="mt-1 icon-phone mr-2"></span><span>{{ contactme.phoneone }}</span></a></li>
+                    <li class="mb-3"><a href="tel://11234567890" class="d-flex"><span
+                            class="mt-1 icon-phone mr-2"></span><span>{{ contactme.phonetwo }}</span></a></li>
+                    <li class="mb-3"><a
+                            href="https://preview.colorlib.com/cdn-cgi/l/email-protection#0c65626a634c61756863616d6562226f6361"
+                            class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span><span class="__cf_email__"
+                                                                                                    data-cfemail="a5cccbc3cae5c8dcc1cac8c4cccb8bc6cac8">{{ contactme.email }}</span></span></a>
+                    </li>
+                    <li class="mb-3"><a href="https://colorlib/" target="_blank" class="d-flex"><span
+                            class="mt-1 icon-globe mr-2"></span><span>{{ contactme.website }}</span></a></li>
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

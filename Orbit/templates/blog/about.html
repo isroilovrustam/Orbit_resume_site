@@ -1,0 +1,38 @@
+{% load static %}
+
+<section class="site-section" id="about-section">
+    <div class="container">
+        <div class="row mb-5 align-items-center">
+            {% for about in abouts %}
+            <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                <div class="img-wrap">
+                    <img src="{{ about.image.url }}" alt="Image placeholder" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-heading">
+                    <h2>My Bio</h2>
+                </div>
+                <p>{{ about.content }}</p>
+                {% endfor %}
+                <div class="my-5">
+                    {% for degree in degrees %}
+                    <div class="skill">
+                        <h3>{{ degree.name }}</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: {{ degree.percentage }}%" aria-valuenow="{{ degree.percentage }}"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span>{{ degree.percentage }}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p>
+                    <a href="#contact-section" class="btn btn-primary smoothscroll">Hire Me</a>
+                    <a href="#" class="btn btn-secondary">Download CV</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

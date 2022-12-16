@@ -1,0 +1,35 @@
+{% load static %}
+
+<section class="untree_co-section" id="portfolio-section">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading text-center col-md-12" data-aos="fade-up" data-aos-delay="0">
+                <h2>My Portfolio</h2>
+            </div>
+        </div>
+        <div class="filters" data-aos="fade-up" data-aos-delay="100">
+            <ul>
+                <a href="?cat=#portfolio-section ">All</a></li>
+                {% for category in categorys %}
+                    <li>
+                        <a href="?cat={{ category.name }}#portfolio-section">{{ category.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="row grid">
+                {% for portfolio in portfolios %}
+                    <div class="single-portfolio col-sm-4 all mockup">
+                        <a href="{{ portfolio.image.url }}" data-fancybox="gal">
+                            <img src="{{ portfolio.image.url }}" alt="Image" class="img-fluid">
+                            <div class="contents">
+                                <h3>{{ portfolio.title }}</h3>
+                                <div class="cat">{{ portfolio.category }}</div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

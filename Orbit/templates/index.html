@@ -1,0 +1,234 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<!-- Mirrored from preview.colorlib.com/theme/orbit/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 08:21:49 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Orbit Free HTML Template by Colorlib</title>
+    <script nonce="c7ae6436-2870-4cf2-a75f-2f6ba4d77cf8">(function (w, d) {
+        !function (cM, cN, cO, cP) {
+            cM.zarazData = cM.zarazData || {};
+            cM.zarazData.executed = [];
+            cM.zaraz = {deferred: [], listeners: []};
+            cM.zaraz.q = [];
+            cM.zaraz._f = function (cQ) {
+                return function () {
+                    var cR = Array.prototype.slice.call(arguments);
+                    cM.zaraz.q.push({m: cQ, a: cR})
+                }
+            };
+            for (const cS of ["track", "set", "debug"]) cM.zaraz[cS] = cM.zaraz._f(cS);
+            cM.zaraz.init = () => {
+                var cT = cN.getElementsByTagName(cP)[0], cU = cN.createElement(cP),
+                    cV = cN.getElementsByTagName("title")[0];
+                cV && (cM.zarazData.t = cN.getElementsByTagName("title")[0].text);
+                cM.zarazData.x = Math.random();
+                cM.zarazData.w = cM.screen.width;
+                cM.zarazData.h = cM.screen.height;
+                cM.zarazData.j = cM.innerHeight;
+                cM.zarazData.e = cM.innerWidth;
+                cM.zarazData.l = cM.location.href;
+                cM.zarazData.r = cN.referrer;
+                cM.zarazData.k = cM.screen.colorDepth;
+                cM.zarazData.n = cN.characterSet;
+                cM.zarazData.o = (new Date).getTimezoneOffset();
+                if (cM.dataLayer) for (const cZ of Object.entries(Object.entries(dataLayer).reduce(((c_, da) => ({...c_[1], ...da[1]}))))) zaraz.set(cZ[0], cZ[1], {scope: "page"});
+                cM.zarazData.q = [];
+                for (; cM.zaraz.q.length;) {
+                    const db = cM.zaraz.q.shift();
+                    cM.zarazData.q.push(db)
+                }
+                cU.defer = !0;
+                for (const dc of [localStorage, sessionStorage]) Object.keys(dc || {}).filter((de => de.startsWith("_zaraz_"))).forEach((dd => {
+                    try {
+                        cM.zarazData["z_" + dd.slice(7)] = JSON.parse(dc.getItem(dd))
+                    } catch {
+                        cM.zarazData["z_" + dd.slice(7)] = dc.getItem(dd)
+                    }
+                }));
+                cU.referrerPolicy = "origin";
+                cU.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(cM.zarazData)));
+                cT.parentNode.insertBefore(cU, cT)
+            };
+            ["complete", "interactive"].includes(cN.readyState) ? zaraz.init() : cM.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, 0, "script");
+    })(window, document);</script>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+</div>
+<nav class="site-nav js-site-navbar mb-5 site-navbar-target">
+    <div class="container">
+        <div class="site-navigation text-center">
+            <a href="/#home-section" class="d-block text-center float-left logo">JA</a>
+            <ul class="js-clone-nav ml-0 pl-0 d-none d-lg-inline-block site-menu mx-auto text-center">
+                <li class="active"><a href="/#home-section" class="nav-link">Home</a></li>
+                <li class="has-children">
+                    <a href="#" class="nav-link">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><a href="/#testimonials-section" class="nav-link">Testimonials</a></li>
+                        <li class="has-children">
+                            <a href="#">Menu Two</a>
+                            <ul class="dropdown">
+                                <li><a href="#" class="nav-link">Sub Menu One</a></li>
+                                <li><a href="#" class="nav-link">Sub Menu Two</a></li>
+                                <li><a href="#" class="nav-link">Sub Menu Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-link">Menu Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="/#about-section" class="nav-link">About</a></li>
+                <li><a href="/#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="/#services-section" class="nav-link">Services</a></li>
+                <li><a href="/#resume-section" class="nav-link">Resume</a></li>
+                <li><a href="/#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="/#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#"
+               class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block light d-lg-none"
+               data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
+        </div>
+    </div>
+</nav>
+{% block content %}
+{% block home %}{% include 'blog/home.html' %}{% endblock %}
+{% block about %}{% include 'blog/about.html' %}{% endblock %}
+{% block portfolio %}{% include 'blog/portfolio.html' %}{% endblock %}
+{% block service %}{% include 'blog/service.html' %}{% endblock %}
+{% block resume %}{% include 'blog/resume.html' %}{% endblock %}
+{% block heppy %}{% include 'blog/happy.html' %}{% endblock %}
+{% block medium %}{% include 'blog/medium.html' %}{% endblock %}
+{% block contact %}{% include 'contact/contact.html' %}{% endblock %}
+{% endblock %}
+<div class="site-footer">
+    <div class="footer-dots"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>About<span class="text-primary">.</span></h3>
+                    {% for about in abouts %}
+                    <p>{{ about.content }}</p>
+                    {% endfor %}
+                </div>
+                <div class="widget">
+                    <h3>Connect</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                        <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 ml-auto">
+                <div class="widget">
+                    <h3>Navagation</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#">Bootstrap</a></li>
+                        <li><a href="#">Javascript</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="widget">
+                    <h3>Services</h3>
+                    <ul class="list-unstyled float-left links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">eCommerce</a></li>
+                        <li><a href="#">WordPress</a></li>
+                        <li><a href="#">Frontend</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h3>Contact</h3>
+                    {% for contactme in contactmes %}
+                    <address>{{ contactme.address }}</address>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="tel://11234567890">{{ contactme.phoneone }}</a></li>
+                        <li><a href="tel://11234567890">{{ contactme.phonetwo}}</a></li>
+                        <li>
+                            <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection#4f262129200f22362b20222e2621612c2022"><span
+                                    class="__cf_email__" data-cfemail="7910171f163914001d1614181017571a1614">{{ contactme.email }}</span></a>
+                        </li>
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p>Abdumalikovich Rustamjon Isroilov </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlayer"></div>
+<div class="loader">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"770136738e4c376c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/orbit/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 08:22:23 GMT -->
+</html>

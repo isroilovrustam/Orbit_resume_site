@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="untree_co-section" id="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading text-center col-md-12 mb-5" data-aos="fade-up" data-aos-delay="0">
+                <h2>Services</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for service in services %}
+            <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="site-service-item" data-animate-effect="fadeIn">
+
+                    <h3 class="mb-4">{{ service.name }}</h3>
+                    <p>{{ service.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
